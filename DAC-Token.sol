@@ -8,10 +8,7 @@ pragma solidity ^0.4.21;
 // 2018-2021 (c) Companion Software
 // https://www.companion-software.eu/
 //
-// 2018 (c) e-Geist IT
-// https://www.e-geist.eu/
-//
-// DAC Token RC0 (Release Candidate 0) - Build 1328
+// DAC Token - Build 20210338-1331
 //
 // Last update: 20210328
 
