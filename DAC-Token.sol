@@ -8,9 +8,9 @@ pragma solidity ^0.4.21;
 // 2018-2021 (c) Companion Software
 // https://www.companion-software.eu/
 //
-// DAC Token - Build 20210338-1331
+// DAC Token - Build 202100509-2311
 //
-// Last update: 20210328
+// Last update: 20210509
 
 
 contract owned {
@@ -187,7 +187,7 @@ contract TokenERC223 {
 /*       ADVANCED TOKEN STARTS HERE       */
 /******************************************/
 
-contract TestToken is owned, TokenERC223 {
+contract DACToken is owned, TokenERC223 {
 
     uint256 public sellPrice;
     uint256 public buyPrice;
@@ -198,7 +198,7 @@ contract TestToken is owned, TokenERC223 {
     event FrozenFunds(address target, bool frozen);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function TestToken(
+    function DACToken(
         uint256 initialSupply,
         string tokenName,
         string tokenSymbol
@@ -224,5 +224,4 @@ contract TestToken is owned, TokenERC223 {
         frozenAccount[target] = freeze;
         emit FrozenFunds(target, freeze);
     }
-    
-    
+}    
